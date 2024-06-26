@@ -1,0 +1,172 @@
+body{
+    background:linear-gradient(to top,rgb(0, 0, 0,0.8),rgb(0,0,0,0.4)), url("img.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    
+}
+.body{
+    padding-top: 120px;
+    text-align: center;
+    border: none;
+    display: flex;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.music-img{
+    /* position: relative; */
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-around;
+}
+.music-img img{
+    /* position: relative; */
+    opacity: 1;
+    border-radius: 5px;
+    display: flex;
+    width: 12%;
+    box-shadow: 0px 0px 20px rgb(242, 6, 250);
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transition: transform 0.5s ease-out;
+    transition: opacity 0.3s ease;
+}
+@keyframes move {
+    0% {
+        box-shadow: 0px 0px 2px rgb(242, 6, 250);
+    }
+    50% {
+        box-shadow: 0px 0px 30px rgb(242, 0, 250);
+    }
+    100% {
+        box-shadow: 0px 0px 0px rgb(242, 6, 250);
+    }
+}
+.icon{
+    margin-top: -210px;
+    justify-items: center;
+}
+.icon img{
+    width: 7%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    
+}
+.music-name{
+    color: pink;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-bottom: 3px;
+    text-shadow: 0px 0px 30px white;
+}
+.singer{
+    color: rgb(202, 198, 198);
+    margin-bottom:6px;
+    text-shadow: 0px 0px 10px pink;
+}
+.control{
+    display: flex;
+}
+.control img{
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    padding: 5px 5px;
+    background-color: rgb(36, 35, 35);
+    border-radius: 50%;
+    justify-content: space-between;
+    margin: 15px ;
+    box-shadow: 0px 0px 10px pink;
+}
+#auto{
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateX(-30px);
+    margin-top: 23px ;
+    text-shadow: 0px 0px 0px rgb(245, 118, 139);
+}
+.idea {
+    display: flex;
+    margin-top: -30px;
+    font-family: Cambria;
+    color: rgb(248, 235, 237);
+    font-size: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+.Return{
+    transform: translateX(110px);
+    opacity: 0;
+}
+.matic{
+    transform: translateX(-120px);
+    opacity: 0;
+}
+#return{
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateX(30px);
+    margin-top: 23px ;
+    /* box-shadow: 0px 0px 10px pink; */
+}
+#auto:hover ~ .matic{
+    opacity: 1;
+}
+.control img:nth-child(3){
+    transform: scale(1.2);
+}
+.control img:nth-child(2){
+    box-shadow: 0px 0px 5px pink;
+}
+.resever{
+    transform: scale(-1,-1);
+}
+.playlist{
+    cursor: pointer;
+    margin-bottom:15px ;
+    width: 300px;
+    height: 5px;
+    display: grid;
+    border-radius: 5px;
+    background-color: rgb(136, 131, 131);
+    position: relative;
+}
+.linetime{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:white;
+    width: 00%;
+    position: absolute;
+    transition: width 0.1s;
+    height: 100%;
+    box-shadow: 0px 0px 5px pink;
+}
+.linetime::after{
+    content: "";
+    background-color:pink;
+    cursor: pointer;
+    position: absolute;
+    top: -3px;
+    right: -6px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+.time{
+    color:rgb(209, 201, 201);
+    font-size: 12px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 300px;
+}
+.end{
+    padding-left: 254px;
+}
