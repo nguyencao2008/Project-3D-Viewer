@@ -32,6 +32,7 @@ const musicLink=["https://youtu.be/OrDB4jpA1g8?si=wNlqVaHI6LxHbSlR",
 link.href=musicLink[music]
 audio.src=audioList[music]
 var active=3
+console.log("Cao")
 function next(activee){
     var index=0
     for(var i=-activee;i<0;i++){
